@@ -14,10 +14,10 @@
   <meta property="og:title" content="Groxius Academy – Excelência em Treinamento de Vendas" />
   <meta property="og:description" content="Metodologia comprovada para formar SDRs, Closers e Gestores Comerciais com base em Receita Previsível." />
   <meta property="og:url" content="https://groxiusacademy.com.br/" />
-  <meta property="og:image" content="https://groxiusacademy.com.br/images/logo-groxiusacademy-horizontal-dark.png" />
+  <meta property="og:image" content="https://groxiusacademy.com.br/hero-bg.png" />
 
   <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="images/logo-groxiusacademy-icon-gold.png" />
+  <link rel="icon" type="image/png" href="logo.png" />
 
   <!-- FONTE -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,16 +27,16 @@
   <!-- ESTILOS -->
   <style>
     :root {
-      --primary: #c4a16c;          /* dourado Groxius */
-      --primary-dark: #131c32;     /* navy principal */
-      --accent: #1d4559;           /* azul de apoio */
-      --bg-light: #f3ece2;         /* areia / fundo claro */
-      --bg-soft: #19254214;        /* navy bem suave */
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --accent: #f97316;
+      --bg-light: #f3f4f6;
+      --bg-soft: #eef2ff;
       --text-main: #111827;
       --text-muted: #6b7280;
       --white: #ffffff;
       --radius-lg: 18px;
-      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.16);
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.12);
     }
 
     * {
@@ -74,9 +74,9 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(243, 236, 226, 0.97);
+      background: rgba(255, 255, 255, 0.97);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.06);
     }
 
     .nav {
@@ -90,12 +90,13 @@
     .nav-left {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
 
     .logo-img {
-      height: 60px;
+      height: 54px;
       width: auto;
+      border-radius: 14px;
     }
 
     .brand-text {
@@ -105,9 +106,8 @@
 
     .brand-text strong {
       font-size: 18px;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      color: var(--primary-dark);
     }
 
     .brand-text span {
@@ -165,29 +165,29 @@
 
     .btn-primary {
       background: var(--primary);
-      color: var(--primary-dark);
-      box-shadow: 0 12px 30px rgba(19, 28, 50, 0.35);
+      color: var(--white);
+      box-shadow: 0 12px 30px rgba(79, 70, 229, 0.35);
     }
 
     .btn-primary:hover {
-      background: #d4b27d;
+      background: var(--primary-dark);
       transform: translateY(-1px);
-      box-shadow: 0 16px 40px rgba(19, 28, 50, 0.45);
+      box-shadow: 0 16px 40px rgba(79, 70, 229, 0.45);
     }
 
     .btn-outline {
       background: transparent;
-      color: var(--primary-dark);
-      border: 1px solid var(--primary-dark);
+      color: var(--primary);
+      border: 1px solid var(--primary);
     }
 
     .btn-outline:hover {
-      background: rgba(19, 28, 50, 0.06);
+      background: rgba(79, 70, 229, 0.06);
       transform: translateY(-1px);
     }
 
     .btn-secondary {
-      background: var(--primary-dark);
+      background: #0f172a;
       color: var(--white);
       box-shadow: 0 12px 30px rgba(15, 23, 42, 0.35);
     }
@@ -195,17 +195,6 @@
     .btn-secondary:hover {
       transform: translateY(-1px);
       box-shadow: 0 16px 40px rgba(15, 23, 42, 0.45);
-    }
-
-    .btn-light {
-      background: var(--white);
-      color: var(--primary-dark);
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
-    }
-
-    .btn-light:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.30);
     }
 
     .hamburger {
@@ -219,7 +208,7 @@
     /* HERO */
     .hero {
       padding: 42px 0 30px;
-      background: radial-gradient(circle at top left, #f6efe3 0, #f3ece2 40%, #fdfaf5 100%);
+      background: radial-gradient(circle at top left, #eef2ff 0, #e0f2fe 40%, #f9fafb 100%);
       border-bottom: 1px solid rgba(15, 23, 42, 0.04);
     }
 
@@ -236,7 +225,7 @@
       gap: 8px;
       padding: 5px 12px;
       border-radius: 999px;
-      background: rgba(196, 161, 108, 0.12);
+      background: rgba(79, 70, 229, 0.06);
       color: var(--primary-dark);
       font-size: 11px;
       margin-bottom: 8px;
@@ -252,11 +241,10 @@
       font-size: 30px;
       line-height: 1.2;
       margin-bottom: 8px;
-      color: var(--primary-dark);
     }
 
     .hero-title span {
-      color: var(--accent);
+      color: var(--primary);
     }
 
     .hero-subtitle {
@@ -278,7 +266,7 @@
       padding: 6px 10px;
       border-radius: 999px;
       background: var(--white);
-      border: 1px solid rgba(15, 23, 42, 0.06);
+      border: 1px solid rgba(15, 23, 42, 0.08);
     }
 
     .hero-cta {
@@ -305,7 +293,7 @@
       display: block;
       font-weight: 600;
       font-size: 16px;
-      color: var(--accent);
+      color: var(--primary-dark);
     }
 
     .hero-metric-item span:last-child {
@@ -319,7 +307,7 @@
       border-radius: var(--radius-lg);
       padding: 16px 16px 18px;
       box-shadow: var(--shadow-soft);
-      border: 1px solid rgba(19, 28, 50, 0.20);
+      border: 1px solid rgba(79, 70, 229, 0.25);
       position: relative;
       overflow: hidden;
     }
@@ -327,12 +315,12 @@
     .hero-form-card::after {
       content: "";
       position: absolute;
-      width: 160px;
-      height: 160px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      border: 16px solid rgba(196, 161, 108, 0.15);
-      right: -60px;
-      top: -80px;
+      border: 16px solid rgba(79, 70, 229, 0.08);
+      right: -50px;
+      top: -70px;
     }
 
     .hero-form-header {
@@ -344,7 +332,6 @@
     .hero-form-header h2 {
       font-size: 17px;
       margin-bottom: 4px;
-      color: var(--primary-dark);
     }
 
     .hero-form-header p {
@@ -370,7 +357,7 @@
       width: 100%;
       padding: 8px 9px;
       border-radius: 10px;
-      border: 1px solid rgba(148, 163, 184, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.8);
       margin-bottom: 7px;
       font-size: 12px;
       font-family: inherit;
@@ -407,14 +394,13 @@
       font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--primary-dark);
       margin-bottom: 4px;
     }
 
     .section-title {
       font-size: 22px;
       margin-bottom: 6px;
-      color: var(--primary-dark);
     }
 
     .section-subtitle {
@@ -449,7 +435,6 @@
     .card h3 {
       font-size: 15px;
       margin-bottom: 6px;
-      color: var(--primary-dark);
     }
 
     .card p {
@@ -478,13 +463,12 @@
       background: #ffffff;
       border-radius: 14px;
       padding: 16px;
-      border: 1px solid rgba(196, 161, 108, 0.25);
+      border: 1px solid rgba(79, 70, 229, 0.16);
     }
 
     .program-card h3 {
       font-size: 15px;
       margin-bottom: 6px;
-      color: var(--primary-dark);
     }
 
     .program-card ul {
@@ -544,7 +528,7 @@
       border-radius: 14px;
       padding: 14px;
       font-size: 13px;
-      border: 1px dashed rgba(19, 28, 50, 0.35);
+      border: 1px dashed rgba(79, 70, 229, 0.35);
     }
 
     /* INSTRUTORES */
@@ -563,13 +547,12 @@
     }
 
     .instructor-image {
-      width: 110px;
-      height: 110px;
+      width: 90px;
+      height: 90px;
       border-radius: 999px;
       overflow: hidden;
       margin: 0 auto 8px;
       background: #e5e7eb;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.25);
     }
 
     .instructor-image img {
@@ -596,7 +579,7 @@
       align-items: center;
       justify-content: center;
       margin-top: 12px;
-      opacity: 0.9;
+      opacity: 0.85;
     }
 
     .logos-bar img {
@@ -642,7 +625,7 @@
     .testimonial-author strong {
       display: block;
       font-size: 13px;
-      color: var(--primary-dark);
+      color: var(--text-main);
     }
 
     .testimonial-author span {
@@ -668,7 +651,7 @@
 
     /* CTA */
     .cta-section {
-      background: radial-gradient(circle at top left, #1d4559 0, #131c32 40%, #020617 100%);
+      background: linear-gradient(135deg, #4f46e5, #0f172a);
       color: var(--white);
       padding: 30px 0;
     }
@@ -728,7 +711,7 @@
     .faq-item strong {
       display: block;
       margin-bottom: 4px;
-      color: var(--primary-dark);
+      color: var(--text-main);
     }
 
     .faq-item p {
@@ -757,7 +740,7 @@
     .mapa-embed {
       border-radius: 14px;
       overflow: hidden;
-      border: 1px solid rgba(15, 23, 42, 0.18);
+      border: 1px solid rgba(15, 23, 42, 0.1);
       min-height: 230px;
       background: #020617;
     }
@@ -792,8 +775,9 @@
     }
 
     .footer-logo {
-      height: 44px;
+      height: 40px;
       width: auto;
+      border-radius: 12px;
     }
 
     .footer-links {
@@ -891,7 +875,7 @@
       padding: 6px 14px;
       border-radius: 999px;
       border: none;
-      background: var(--primary-dark);
+      background: var(--primary);
       color: #ffffff;
       cursor: pointer;
       white-space: nowrap;
@@ -949,7 +933,7 @@
         left: 0;
         right: 0;
         top: 60px;
-        background: #f3ece2;
+        background: #ffffff;
         padding: 10px 16px 12px;
         border-bottom: 1px solid rgba(15, 23, 42, 0.06);
         flex-direction: column;
@@ -1022,7 +1006,7 @@
       <nav class="nav">
         <div class="nav-left">
           <a href="#inicio">
-            <img src="images/logo-groxiusacademy-horizontal-dark.png" alt="Groxius Academy" class="logo-img" />
+            <img src="logo.png" alt="Groxius Academy" class="logo-img" />
           </a>
           <div class="brand-text">
             <strong>Groxius Academy</strong>
@@ -1205,7 +1189,7 @@
         <div class="grid-3">
           <article class="card">
             <div class="benefit-icon">
-              <img src="images/icon-check.svg" alt="Check" />
+              <img src="icon-check.svg" alt="Check" />
             </div>
             <h3>Metodologia comprovada</h3>
             <p>
@@ -1215,7 +1199,7 @@
           </article>
           <article class="card">
             <div class="benefit-icon">
-              <img src="images/icon-check.svg" alt="Check" />
+              <img src="icon-check.svg" alt="Check" />
             </div>
             <h3>Instrutores de campo</h3>
             <p>
@@ -1225,7 +1209,7 @@
           </article>
           <article class="card">
             <div class="benefit-icon">
-              <img src="images/icon-check.svg" alt="Check" />
+              <img src="icon-check.svg" alt="Check" />
             </div>
             <h3>Resultados mensuráveis</h3>
             <p>
@@ -1340,28 +1324,28 @@
         <div class="instructors-grid">
           <div class="instructor-card">
             <div class="instructor-image">
-              <img src="images/guilherme-loureiro-groxius-headshot-900.jpg" alt="Guilherme Loureiro">
+              <img src="guilherme-loureiro.jpg" alt="Guilherme Loureiro">
             </div>
             <h3>Guilherme Loureiro</h3>
             <p class="instructor-title">Especialista em Vendas Consultivas &amp; Outbound</p>
           </div>
           <div class="instructor-card">
             <div class="instructor-image">
-              <img src="images/renato-grinberg.jpg" alt="Renato Grinberg">
+              <img src="renato-grinberg.jpg" alt="Renato Grinberg">
             </div>
             <h3>Renato Grinberg</h3>
             <p class="instructor-title">Estrategista de Vendas Complexas</p>
           </div>
           <div class="instructor-card">
             <div class="instructor-image">
-              <img src="images/johannes-castellanno.jpg" alt="Johannes Castellanno">
+              <img src="johannes-castellanno.jpg" alt="Johannes Castellanno">
             </div>
             <h3>Johannes Castellanno</h3>
             <p class="instructor-title">Especialista em Metodologia de Vendas</p>
           </div>
           <div class="instructor-card">
             <div class="instructor-image">
-              <img src="images/carol-castellanno.jpg" alt="Carol Castellanno">
+              <img src="carol-castellanno.jpg" alt="Carol Castellanno">
             </div>
             <h3>Carol Castellanno</h3>
             <p class="instructor-title">Especialista em Desenvolvimento de Talentos</p>
@@ -1374,10 +1358,10 @@
 
         <div class="logos-bar">
           <span style="font-size:11px; text-transform:uppercase; letter-spacing:0.1em;">Times formados por instrutores da Groxius já atuaram em:</span>
-          <img src="images/logo-empresa1.png" alt="Empresa 1">
-          <img src="images/logo-empresa2.png" alt="Empresa 2">
-          <img src="images/logo-empresa3.png" alt="Empresa 3">
-          <img src="images/logo-empresa4.png" alt="Empresa 4">
+          <img src="logo-empresa1.png" alt="Empresa 1">
+          <img src="logo-empresa2.png" alt="Empresa 2">
+          <img src="logo-empresa3.png" alt="Empresa 3">
+          <img src="logo-empresa4.png" alt="Empresa 4">
         </div>
       </div>
     </section>
@@ -1401,7 +1385,7 @@
               não em processo. Depois da formação, passei a bater meta de forma consistente.”
             </p>
             <div class="testimonial-author">
-              <img src="images/testimonial-1.jpg" alt="João Silva">
+              <img src="testimonial-1.jpg" alt="João Silva">
               <div>
                 <strong>João Silva</strong>
                 <span>Closer B2B</span>
@@ -1415,7 +1399,7 @@
               número de oportunidades qualificadas no pipeline.”
             </p>
             <div class="testimonial-author">
-              <img src="images/testimonial-2.jpg" alt="Maria Santos">
+              <img src="testimonial-2.jpg" alt="Maria Santos">
               <div>
                 <strong>Maria Santos</strong>
                 <span>Head de Vendas</span>
@@ -1425,7 +1409,7 @@
 
           <article class="testimonial-card">
             <div class="testimonial-video-wrapper">
-              <!-- Substitua VIDEOCASEID por um case real no YouTube -->
+              <!-- coloque aqui um vídeo de case real se quiser -->
               <iframe src="https://www.youtube.com/embed/VIDEOCASEID"
                       title="Case de sucesso Groxius Academy"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1552,7 +1536,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-logo-wrap">
-          <img src="images/logo-groxiusacademy-horizontal-light.png" alt="Groxius Academy" class="footer-logo" />
+          <img src="logo-dark.png" alt="Groxius Academy" class="footer-logo" />
           <div>
             <div style="font-weight:600;">Groxius Academy</div>
             <div style="font-size:11px;">Transformando times de vendas em máquinas de receita previsível</div>
@@ -1617,7 +1601,7 @@
      class="whatsapp-float"
      target="_blank"
      aria-label="Falar com a Groxius Academy pelo WhatsApp">
-    <img src="images/logo-groxiusacademy-icon-gold.png" alt="WhatsApp Groxius Academy">
+    <img src="whatsapp-float.png" alt="WhatsApp Groxius Academy">
   </a>
 
   <!-- SCRIPTS -->
