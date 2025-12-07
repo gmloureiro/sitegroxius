@@ -14,9 +14,10 @@
   <meta property="og:title" content="Groxius Academy – Excelência em Treinamento de Vendas" />
   <meta property="og:description" content="Metodologia comprovada para formar SDRs, Closers e Gestores Comerciais com base em Receita Previsível." />
   <meta property="og:url" content="https://groxiusacademy.com.br/" />
-  <meta property="og:image" content="hero-bg.png" />
+  <!-- usa o próprio logo para evitar 404 -->
+  <meta property="og:image" content="logo.png" />
 
-  <!-- FAVICON (USA O LOGO DA GROXIUS NA GUIA) -->
+  <!-- FAVICON – logo da Groxius na aba -->
   <link rel="icon" type="image/png" href="logo-dark.png" />
 
   <!-- FONTE -->
@@ -108,7 +109,7 @@
 
     /* ✅ LOGO BONITO NO TOPO */
     .logo-img {
-      height: 40px;   /* altura agradável no header */
+      height: 40px;
       width: auto;
     }
 
@@ -970,7 +971,7 @@
         display: block;
       }
 
-      /* No mobile, some brand text off to keep clean */
+      /* Deixa o topo mais limpo no mobile */
       .brand-text span {
         display: none;
       }
@@ -1032,7 +1033,6 @@
     <div class="container">
       <nav class="nav">
         <div class="nav-left">
-          <!-- ✅ LOGO + TAGLINE -->
           <a href="#inicio" class="logo-wrap">
             <img src="logo.png" alt="Groxius Academy" class="logo-img" />
             <div class="brand-text">
@@ -1062,16 +1062,575 @@
 
   <!-- HERO -->
   <main>
-    <!-- (toda a parte de HERO, seções, etc. permanece exatamente igual ao que você já tinha) -->
-    <!-- ...  === AQUI VAI TODO O RESTO DO CÓDIGO IGUAL AO SEU ARQUIVO ANTERIOR === ... -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <!-- TEXTO -->
+        <div>
+          <div class="hero-tag">
+            <span>Escola de Vendas</span>
+            <span>Baseada em Receita Previsível</span>
+          </div>
+          <h1 class="hero-title">
+            Transforme <span>SDRs, Closers e Gestores</span> em uma máquina de receita previsível.
+          </h1>
+          <p class="hero-subtitle">
+            A Groxius Academy combina metodologia comprovada, prática intensa e mentoria de quem já construiu times
+            que geram milhões em novas vendas todos os anos.
+          </p>
+          <div class="hero-highlights">
+            <div class="hero-pill">Formação SDR, Closer e Gestor</div>
+            <div class="hero-pill">Playbook Receita Previsível</div>
+            <div class="hero-pill">Turmas abertas e in-company</div>
+            <div class="hero-pill">Trilha completa de carreira</div>
+          </div>
+          <div class="hero-cta">
+            <a href="#form-lead" class="btn btn-primary">Receber trilha de formação</a>
+            <a href="https://wa.me/5511999999999" class="btn btn-outline" target="_blank">Falar com um especialista</a>
+          </div>
+          <p class="hero-note">
+            Programas para profissionais individuais, times comerciais completos e empresas que desejam escalar vendas com previsibilidade.
+          </p>
 
-    <!-- Vou omitir aqui para não ficar gigante, mas é só manter o mesmo conteúdo
-         a partir da seção <section class="hero" id="inicio"> até o final. -->
+          <div class="hero-metrics">
+            <div class="hero-metric-item">
+              <span>+300%</span>
+              <span>Aumento médio em oportunidades qualificadas.</span>
+            </div>
+            <div class="hero-metric-item">
+              <span>+10 anos</span>
+              <span>Formando times de alta performance em vendas B2B.</span>
+            </div>
+            <div class="hero-metric-item">
+              <span>Time sênior</span>
+              <span>Instrutores que já lideraram times que venderam milhões.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM LEAD -->
+        <aside class="hero-form-card" aria-label="Formulário de interesse" id="form-lead">
+          <div class="hero-form-header">
+            <h2>Quero formar um time de vendas previsível</h2>
+            <p>Preencha seus dados para receber a trilha de formação e falar com um especialista da Groxius Academy.</p>
+          </div>
+
+          <form class="hero-form" action="#" method="POST">
+            <label for="nome">
+              Nome completo:
+            </label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label for="email">
+              E-mail corporativo:
+            </label>
+            <input type="email" id="email" name="email" placeholder="voce@suaempresa.com.br" required>
+
+            <label for="telefone">
+              Telefone / WhatsApp:
+            </label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+
+            <label for="empresa">
+              Empresa:
+            </label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa">
+
+            <label for="interesse">
+              Interesse principal:
+            </label>
+            <select id="interesse" name="interesse" required>
+              <option value="">Selecione</option>
+              <option value="formacao-sdr">Formação de SDRs</option>
+              <option value="formacao-closers">Formação de Closers</option>
+              <option value="formacao-gestores">Formação de Gestores Comerciais</option>
+              <option value="time-completo">Formar time completo de vendas</option>
+              <option value="outros">Outros (descrever na mensagem)</option>
+            </select>
+
+            <label for="mensagem">
+              Contexto ou desafio atual:
+            </label>
+            <textarea id="mensagem" name="mensagem" placeholder="Ex.: Quero montar um time de SDRs do zero em 90 dias."></textarea>
+
+            <button type="submit" class="btn btn-primary">Quero receber a trilha e contato</button>
+
+            <div class="hero-form-small">
+              Seus dados serão usados apenas para contato sobre os treinamentos Groxius Academy.
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Sobre a Groxius Academy</div>
+          <h2 class="section-title">Excelência em formação de times de vendas</h2>
+          <p class="section-subtitle">
+            Mais do que cursos, a Groxius Academy é uma escola de vendas. Ajudamos profissionais e empresas a
+            estruturarem times completos – SDRs, Closers e Gestores – com base em processos, dados e Receita Previsível.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Escola de Vendas moderna</h3>
+            <p>
+              Conteúdos atualizados, linguagem prática e foco em B2B, inside sales e vendas consultivas. Do
+              básico ao avançado, com trilhas alinhadas à realidade do mercado.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Metodologia Receita Previsível</h3>
+            <p>
+              Estruturação de funis, cadências, indicadores e rituais de gestão que tornam vendas um processo
+              repetível, previsível e escalável.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Implementação prática</h3>
+            <p>
+              O foco não é só aprender: é implementar. Cada módulo traz roteiros, planilhas, scripts e playbooks
+              para aplicar direto no dia a dia do time.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="beneficios">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Por que escolher a Groxius?</div>
+          <h2 class="section-title">Formação completa para quem vive de vendas</h2>
+          <p class="section-subtitle">
+            A Groxius Academy foi desenhada para desenvolver a carreira individual e, ao mesmo tempo, aumentar
+            o faturamento das empresas que investem em seus times.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="benefit-icon">
+              <img src="icon-check.svg" alt="Check" />
+            </div>
+            <h3>Metodologia comprovada</h3>
+            <p>
+              Técnicas testadas em dezenas de operações comerciais, com foco em geração de leads, qualificação
+              e fechamento estruturado.
+            </p>
+          </article>
+          <article class="card">
+            <div class="benefit-icon">
+              <img src="icon-check.svg" alt="Check" />
+            </div>
+            <h3>Instrutores de campo</h3>
+            <p>
+              Aprenda com profissionais que já foram SDRs, Closers e gestores, e que continuam operando times
+              de vendas no dia a dia.
+            </p>
+          </article>
+          <article class="card">
+            <div class="benefit-icon">
+              <img src="icon-check.svg" alt="Check" />
+            </div>
+            <h3>Resultados mensuráveis</h3>
+            <p>
+              Aumento médio expressivo na quantidade de reuniões qualificadas, previsibilidade no pipeline e
+              crescimento de receita recorrente.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRILHAS / PROGRAMAS -->
+    <section id="programas">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Trilhas de formação</div>
+          <h2 class="section-title">Programas para cada etapa da operação</h2>
+          <p class="section-subtitle">
+            Da prospecção ao fechamento, passando pela gestão. Você escolhe por onde começar ou estrutura a
+            trilha completa com a Groxius Academy.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="program-card">
+            <h3>Formação SDR (Prospecção)</h3>
+            <ul>
+              <li>Fundamentos de Receita Previsível para pré-vendas.</li>
+              <li>Construção de ICP, persona e listas qualificadas.</li>
+              <li>Scripts de ligação, e-mail e social selling.</li>
+              <li>Rotina diária de SDR, métricas e incentivos.</li>
+            </ul>
+          </article>
+          <article class="program-card">
+            <h3>Formação Closer (Fechamento)</h3>
+            <ul>
+              <li>Roteiro de diagnóstico e proposta consultiva.</li>
+              <li>Gestão de pipeline, follow-up e objeções.</li>
+              <li>Negociação orientada a valor, não a desconto.</li>
+              <li>Previsão de vendas e priorização de oportunidades.</li>
+            </ul>
+          </article>
+          <article class="program-card">
+            <h3>Formação Gestor Comercial</h3>
+            <ul>
+              <li>Desenho da máquina de vendas e papéis do time.</li>
+              <li>Gestão por indicadores e rituais de reuniões.</li>
+              <li>Playbooks, onboarding e plano de carreira.</li>
+              <li>Planejamento de metas, comissões e expansão.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGIA -->
+    <section id="metodologia">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Metodologia</div>
+          <h2 class="section-title">Receita Previsível aplicada à realidade do seu time</h2>
+          <p class="section-subtitle">
+            Unimos conceitos clássicos de Receita Previsível com a experiência prática de quem já montou
+            operações de outbound, inside sales e canais em diferentes mercados.
+          </p>
+        </div>
+
+        <div class="metodologia-grid">
+          <div>
+            <p class="metodologia-highlight">
+              Cada programa é organizado em ciclos: teoria enxuta, prática guiada, implementação real na
+              operação e acompanhamento dos indicadores-chave.
+            </p>
+            <ul class="metodologia-steps">
+              <li><strong>Diagnóstico inicial:</strong> entendemos a maturidade da operação, perfil de clientes e metas de crescimento.</li>
+              <li><strong>Desenho do funil:</strong> definimos etapas, papéis (SDR, Closer, Gestor) e indicadores de cada etapa.</li>
+              <li><strong>Playbook de cadência:</strong> roteiros de contato, fluxos multicanal e modelos de mensagens.</li>
+              <li><strong>Treinamento prático:</strong> simulações, roleplays e exercícios com feedback individual.</li>
+              <li><strong>Acompanhamento:</strong> rituais de gestão, análise de dados e ajustes contínuos para manter a previsibilidade.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="card">
+              <h3>Formatos de entrega</h3>
+              <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">
+                Escolha o modelo ideal para o seu momento:
+              </p>
+              <ul class="metodologia-steps" style="margin-top:8px;">
+                <li><strong>Turmas abertas:</strong> profissionais individuais e pequenos times.</li>
+                <li><strong>Treinamentos in-company:</strong> programas customizados para sua empresa.</li>
+                <li><strong>Trilha híbrida:</strong> encontros ao vivo, conteúdo gravado e mentorias.</li>
+                <li><strong>Projetos de implantação:</strong> apoio na montagem da máquina de vendas do zero.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTRUTORES -->
+    <section id="instrutores">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Instrutores</div>
+          <h2 class="section-title">Quem está à frente da Groxius Academy</h2>
+          <p class="section-subtitle">
+            Profissionais com décadas de experiência em vendas, liderança comercial e construção de
+            operações previsíveis de geração de receita.
+          </p>
+        </div>
+
+        <div class="instructors-grid">
+          <div class="instructor-card">
+            <div class="instructor-image">
+              <img src="guilherme-loureiro-groxius-headshot-900.jpg" alt="Guilherme Loureiro">
+            </div>
+            <h3>Guilherme Loureiro</h3>
+            <p class="instructor-title">Especialista em Vendas Consultivas &amp; Outbound</p>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-image">
+              <img src="carol-castellanno.jpg" alt="Carol Castellanno">
+            </div>
+            <h3>Carol Castellanno</h3>
+            <p class="instructor-title">Especialista em Desenvolvimento de Talentos</p>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-image">
+              <img src="johannes-castellanno.jpg" alt="Johannes Castellanno">
+            </div>
+            <h3>Johannes Castellanno</h3>
+            <p class="instructor-title">Especialista em Metodologia de Vendas</p>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-image">
+              <img src="renato-grinberg.jpg" alt="Renato Grinberg">
+            </div>
+            <h3>Renato Grinberg</h3>
+            <p class="instructor-title">Estrategista de Vendas Complexas</p>
+          </div>
+        </div>
+
+        <div class="view-all">
+          <a href="#form-lead" class="btn btn-secondary">Quero falar com a Groxius</a>
+        </div>
+
+        <div class="logos-bar">
+          <span style="font-size:11px; text-transform:uppercase; letter-spacing:0.12em;">Times formados pelos instrutores Groxius já atuaram em:</span>
+          <img src="logo-empresa1.png" alt="Empresa 1">
+          <img src="logo-empresa2.png" alt="Empresa 2">
+          <img src="logo-empresa3.png" alt="Empresa 3">
+          <img src="logo-empresa4.png" alt="Empresa 4">
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Resultados Reais</div>
+          <h2 class="section-title">O que dizem nossos alunos e clientes</h2>
+          <p class="section-subtitle">
+            Histórias de profissionais que mudaram de patamar na carreira e empresas que estruturaram
+            times previsíveis com apoio da Groxius Academy.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              “A Groxius Academy transformou completamente minha carreira. Eu tinha experiência em vendas, mas
+              não em processo. Depois da formação, passei a bater meta de forma consistente.”
+            </p>
+            <div class="testimonial-author">
+              <img src="testimonial-1.jpg" alt="João Silva">
+              <div>
+                <strong>João Silva</strong>
+                <span>Closer B2B</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              “Montamos nosso primeiro time de SDRs com o apoio da Groxius. Em poucos meses, triplicamos o
+              número de oportunidades qualificadas no pipeline.”
+            </p>
+            <div class="testimonial-author">
+              <img src="testimonial-2.jpg" alt="Maria Santos">
+              <div>
+                <strong>Maria Santos</strong>
+                <span>Head de Vendas</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-video-wrapper">
+              <iframe src="https://www.youtube.com/embed/VIDEOCASEID"
+                      title="Case de sucesso Groxius Academy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+            </div>
+            <p class="testimonial-text">
+              “Ao aplicar a metodologia de Receita Previsível da Groxius, conseguimos clareza de funil,
+              previsibilidade mensal e segurança para investir em crescimento.”
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner">
+          <div>
+            <h2>Pronto para dar o próximo passo na sua operação de vendas?</h2>
+            <p>
+              Seja você um profissional em busca de crescimento ou uma empresa querendo montar sua própria
+              máquina de vendas, a Groxius Academy tem uma trilha para o seu momento.
+            </p>
+          </div>
+          <div>
+            <ul class="cta-points">
+              <li>Diagnóstico gratuito da operação atual.</li>
+              <li>Indicação da trilha de formação ideal.</li>
+              <li>Orientação sobre formatos: turmas abertas, in-company ou projetos customizados.</li>
+            </ul>
+            <div style="margin-top:10px; display:flex; flex-wrap:wrap; gap:10px;">
+              <a href="#form-lead" class="btn btn-light">Quero receber um diagnóstico</a>
+              <a href="https://wa.me/5511999999999" class="btn btn-outline" target="_blank">Conversar via WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Perguntas frequentes</div>
+          <h2 class="section-title">Dúvidas comuns sobre os programas</h2>
+          <p class="section-subtitle">
+            Reunimos as principais respostas para você entender como funcionam os treinamentos e como
+            adaptar a Groxius Academy ao seu momento.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <strong>Os treinamentos são presenciais ou online?</strong>
+            <p>
+              Trabalhamos com modelos online ao vivo, híbridos e, em alguns casos, presenciais in-company.
+              Definimos o formato ideal durante o diagnóstico.
+            </p>
+          </div>
+          <div class="faq-item">
+            <strong>É possível treinar apenas uma parte do time?</strong>
+            <p>
+              Sim. Você pode inscrever apenas SDRs, apenas Closers ou somente Gestores, ou ainda contratar
+              a trilha completa para toda a operação.
+            </p>
+          </div>
+          <div class="faq-item">
+            <strong>Existe acompanhamento depois do treinamento?</strong>
+            <p>
+              Sim, nossos programas incluem acompanhamento por um período determinado, com análise de
+              indicadores, dúvidas e ajustes finos na operação.
+            </p>
+          </div>
+          <div class="faq-item">
+            <strong>Consigo aplicar mesmo começando do zero?</strong>
+            <p>
+              A metodologia foi desenhada tanto para empresas que estão iniciando a área comercial quanto
+              para times que já vendem e querem ganhar previsibilidade e escala.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Contato</div>
+          <h2 class="section-title">Fale com a Groxius Academy</h2>
+          <p class="section-subtitle">
+            Vamos entender seu contexto e indicar a melhor trilha de formação para você ou para o seu time.
+          </p>
+        </div>
+
+        <div class="contato-grid">
+          <div>
+            <ul class="contato-list">
+              <li><strong>E-mail:</strong> contato@groxiusacademy.com.br</li>
+              <li><strong>Telefone:</strong> +55 (11) 9999-9999</li>
+              <li><strong>Cidade:</strong> São Paulo/SP – Brasil</li>
+              <li><strong>Atendimento:</strong> Segunda a sexta, das 9h às 18h.</li>
+            </ul>
+            <p style="font-size:13px; color:var(--text-muted); margin-top:8px;">
+              Atendemos profissionais e empresas de todo o Brasil com programas online, híbridos e in-company.
+            </p>
+          </div>
+          <div class="mapa-embed" aria-label="Localização Groxius Academy">
+            <iframe
+              src="https://www.google.com/maps?&q=São+Paulo,+SP&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER, COOKIE BANNER, WHATSAPP, SCRIPTS -->
-  <!-- (mesmo conteúdo que você já tinha, sem mudanças) -->
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo-wrap">
+          <img src="logo.png" alt="Groxius Academy" class="footer-logo" />
+          <div>
+            <div style="font-weight:600;">Groxius Academy</div>
+            <div style="font-size:11px;">Transformando times de vendas em máquinas de receita previsível</div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#sobre">Sobre</a>
+          <a href="#beneficios">Por que Groxius</a>
+          <a href="#programas">Trilhas</a>
+          <a href="#instrutores">Instrutores</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </div>
 
+      <div class="footer-cols">
+        <div class="footer-col">
+          <div class="footer-col-title">Conteúdo</div>
+          <ul>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+            <li><a href="#programas">Programas de formação</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Contato</div>
+          <ul>
+            <li>contato@groxiusacademy.com.br</li>
+            <li>+55 (11) 9999-9999</li>
+            <li>São Paulo/SP – Brasil</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Redes sociais</div>
+          <div class="footer-social">
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Instagram">ig</a>
+            <a href="#" title="Facebook">f</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span id="anoAtual"></span> Groxius Academy. Todos os direitos reservados.</div>
+        <div>Desenvolvido com foco em Receita Previsível e alta performance em vendas.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner-content">
+      <div>
+        <strong>Usamos cookies para melhorar sua experiência.</strong>
+        Ao continuar navegando, você concorda com o uso de cookies para análise e melhoria do site.
+      </div>
+      <button id="acceptCookies">Aceitar cookies</button>
+    </div>
+  </div>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5511999999999"
+     class="whatsapp-float"
+     target="_blank"
+     aria-label="Falar com a Groxius Academy pelo WhatsApp">
+    <img src="whatsapp-float.png" alt="WhatsApp Groxius Academy">
+  </a>
+
+  <!-- SCRIPTS -->
   <script>
     // Ano no footer
     const anoSpan = document.getElementById('anoAtual');
@@ -1115,4 +1674,5 @@
   </script>
 </body>
 </html>
+
 
