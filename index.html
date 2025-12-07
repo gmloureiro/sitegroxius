@@ -14,11 +14,10 @@
   <meta property="og:title" content="Groxius Academy – Excelência em Treinamento de Vendas" />
   <meta property="og:description" content="Metodologia comprovada para formar SDRs, Closers e Gestores Comerciais com base em Receita Previsível." />
   <meta property="og:url" content="https://groxiusacademy.com.br/" />
-  <!-- usa o próprio logo para evitar 404 -->
-  <meta property="og:image" content="logo.png" />
+  <meta property="og:image" content="groxiusacademy-hero-cover.png" />
 
-  <!-- FAVICON – logo da Groxius na aba -->
-  <link rel="icon" type="image/png" href="logo-dark.png" />
+  <!-- FAVICON (ícone redondo azul que você mandou) -->
+  <link rel="icon" type="image/png" href="groxiusacademy-favicon.png" />
 
   <!-- FONTE -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +27,7 @@
   <!-- ESTILOS -->
   <style>
     :root {
-      /* 🎨 Paleta oficial Groxius (doc de marca) */
+      /* 🎨 Paleta oficial Groxius */
       --navy-deep: #131c32;
       --navy-main: #192542;
       --navy-soft: #1d4559;
@@ -91,7 +90,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 0;
+      padding: 12px 0;
       gap: 16px;
     }
 
@@ -101,33 +100,26 @@
       gap: 14px;
     }
 
-    .logo-wrap {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    /* ✅ LOGO BONITO NO TOPO */
+    /* LOGO DO TOPO – AUMENTADO */
     .logo-img {
-      height: 40px;
+      height: 80px;        /* tamanho maior no desktop */
       width: auto;
     }
 
     .brand-text {
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
 
     .brand-text strong {
-      font-size: 15px;
-      letter-spacing: 0.16em;
+      font-size: 18px;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--navy-main);
     }
 
     .brand-text span {
-      font-size: 11px;
+      font-size: 12px;
       color: var(--text-muted);
     }
 
@@ -604,6 +596,7 @@
       justify-content: center;
       margin-top: 12px;
       opacity: 0.85;
+      text-align: center;
     }
 
     .logos-bar img {
@@ -955,7 +948,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 60px;
+        top: 70px;
         background: #ffffff;
         padding: 10px 16px 12px;
         border-bottom: 1px solid rgba(15, 23, 42, 0.06);
@@ -971,9 +964,9 @@
         display: block;
       }
 
-      /* Deixa o topo mais limpo no mobile */
-      .brand-text span {
-        display: none;
+      /* Logo um pouco menor no mobile pra não ocupar tudo */
+      .logo-img {
+        height: 58px;
       }
 
       .hero {
@@ -1033,13 +1026,14 @@
     <div class="container">
       <nav class="nav">
         <div class="nav-left">
-          <a href="#inicio" class="logo-wrap">
-            <img src="logo.png" alt="Groxius Academy" class="logo-img" />
-            <div class="brand-text">
-              <strong>Groxius Academy</strong>
-              <span>Escola de Vendas &amp; Receita Previsível</span>
-            </div>
+          <a href="#inicio">
+            <!-- usa groxiusacademy-logo-horizontal-dark.png que está no root -->
+            <img src="groxiusacademy-logo-horizontal-dark.png" alt="Groxius Academy" class="logo-img" />
           </a>
+          <div class="brand-text">
+            <strong>GROXUIS ACADEMY</strong>
+            <span>Escola de Vendas &amp; Receita Previsível</span>
+          </div>
         </div>
         <div class="nav-links" id="navLinks">
           <a href="#sobre">Sobre</a>
@@ -1562,7 +1556,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-logo-wrap">
-          <img src="logo.png" alt="Groxius Academy" class="footer-logo" />
+          <img src="groxiusacademy-logo-horizontal-light.png" alt="Groxius Academy" class="footer-logo" />
           <div>
             <div style="font-weight:600;">Groxius Academy</div>
             <div style="font-size:11px;">Transformando times de vendas em máquinas de receita previsível</div>
@@ -1633,8 +1627,7 @@
   <!-- SCRIPTS -->
   <script>
     // Ano no footer
-    const anoSpan = document.getElementById('anoAtual');
-    if (anoSpan) anoSpan.textContent = new Date().getFullYear();
+    document.getElementById('anoAtual').textContent = new Date().getFullYear();
 
     // Menu mobile
     const hamburger = document.getElementById('hamburger');
@@ -1674,5 +1667,4 @@
   </script>
 </body>
 </html>
-
 
